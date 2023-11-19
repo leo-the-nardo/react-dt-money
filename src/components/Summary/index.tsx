@@ -3,7 +3,6 @@ import {
   ArrowCircleDown,
   ArrowCircleUp,
   CurrencyDollar,
-  Money,
 } from "@phosphor-icons/react"
 import { useTheme } from "styled-components"
 

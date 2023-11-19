@@ -4,10 +4,14 @@ export const TransactionsContainer = styled.main`
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
-  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 4rem;
 `
 
 export const TransactionsTable = styled.table`
+  //margin-top: 1.5rem;
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 0.5rem;
