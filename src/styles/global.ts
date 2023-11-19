@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -13,9 +13,15 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${(props) => props.theme["gray-800"]};
     color: ${(props) => props.theme["gray-100"]};
     -webkit-font-smoothing: antialiased;
+    min-height: 120vh; /* Define a altura total da página */
+    background: linear-gradient(${(props) => props.theme["gray-900"]}, ${(
+      props,
+    ) => props.theme["gray-900"]}) top,
+    ${(props) => props.theme["gray-800"]};
+    background-size: 100% 210px, 100%;
+    background-repeat: no-repeat;
   }
 
   body, input, textarea, button {
@@ -23,4 +29,5 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size: 1rem;
   }
-`;
+
+`
