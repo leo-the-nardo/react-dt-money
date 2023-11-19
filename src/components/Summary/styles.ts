@@ -22,7 +22,7 @@ export const SummaryCard = styled.div<SummaryCardProps>`
   align-items: flex-start;
   gap: 0.75rem;
 
-  background-color: ${(props) => props.theme["gray-700"]};
+  background-color: ${(props) => props.theme["gray-600"]};
   border-radius: 6px;
 
   header {
