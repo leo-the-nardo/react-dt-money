@@ -15,6 +15,30 @@
       "price": 59.9,
       "category": "Alimentação",
       "createdAt": "2023-10-15T06:28:16.031Z"
+    },
+    {
+      "description": "Fone de gatinho",
+      "type": "outcome",
+      "category": "Compras",
+      "price": 4000,
+      "createdAt": "2023-11-19T23:45:23.422Z",
+      "id": 3
+    },
+    {
+      "description": "Mouse rosinha",
+      "type": "outcome",
+      "category": "Compras",
+      "price": 400,
+      "createdAt": "2023-11-19T23:57:38.326Z",
+      "id": 4
+    },
+    {
+      "description": "Mousepad kawai",
+      "type": "outcome",
+      "category": "Compras",
+      "price": 200,
+      "createdAt": "2023-11-19T23:58:38.388Z",
+      "id": 5
     }
   ]
 }
