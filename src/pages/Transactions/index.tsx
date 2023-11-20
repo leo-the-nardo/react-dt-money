@@ -6,12 +6,15 @@ import {
   TransactionsTable,
 } from "./styles.ts"
 import { SearchForm } from "./components/SearchForm"
-import { useContext } from "react"
 import { TransactionsContext } from "../../contexts/TransactionsContext.tsx"
 import { formatCurrency, formatDate } from "../../utils/formatter.ts"
+import { useContextSelector } from "use-context-selector"
 
 export function Transactions() {
-  const { transactions } = useContext(TransactionsContext)
+  const transactions = useContextSelector(
+    TransactionsContext,
+    (ctx) => ctx.transactions,
+  )
   return (
     <>
       <Header />

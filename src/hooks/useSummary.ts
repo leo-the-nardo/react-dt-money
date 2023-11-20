@@ -1,8 +1,11 @@
-import { useContext } from "react"
 import { TransactionsContext } from "../contexts/TransactionsContext.tsx"
+import { useContextSelector } from "use-context-selector"
 
 export function useSummary() {
-  const { transactions } = useContext(TransactionsContext)
+  const transactions = useContextSelector(
+    TransactionsContext,
+    (ctx) => ctx.transactions,
+  )
 
   const income = transactions
     .filter((transaction) => transaction.type === "income")
